@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 import string
-for i in range(97, 101):
-    print("{}".format(chr(i)), end="")
-for i in range (102, 113):
-    print("{}".format(chr(i)), end="")
-for i in range (114, 123):
+for i in range(97, 123):
+    if i == 101 or i == 113:
+        continue
     print("{}".format(chr(i)), end="")
