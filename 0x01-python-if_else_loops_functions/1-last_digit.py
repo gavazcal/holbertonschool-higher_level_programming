@@ -8,7 +8,7 @@ if last_digit > 5:
     string = "and is greater than 5"
 elif last_digit == 0:
     string = "and is 0"
-else:
+elif last_digit < 5:
     string = "and is less than 6 and not 0"
 
 print("Last digit of {:d} is {:d} and is {:s}".format(number, last_digit, string))
