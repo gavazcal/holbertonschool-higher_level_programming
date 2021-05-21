@@ -1,0 +1,61 @@
+Import
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Case 0:
+>>> add_integer(0, 0)
+0
+
+Case 1:
+>>> add_integer("sup", 0)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+
+Case 2:
+
+>>> add_integer(2)
+100
+
+Case 3:
+
+>>> add_integer(-3, 4)
+1
+
+Case 4:
+
+>>> add_integer(-1, -1)
+-2
+
+Case 5:
+
+>>> add_integer(2.5, 2)
+4
+
+Case 6:
+
+>>> add_integer(None, 2)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+
+Case 7:
+
+>>> add_integer(2, None)
+Traceback (most recent call last):
+	...
+TypeError: b must be an integer
+
+Case 8:
+
+>>> add_integer()
+Traceback (most recent call last):
+	...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Case 9:
+
+>>> add_integer(1, 2, 3)
+Traceback (most recent call last):
+	...
+TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
