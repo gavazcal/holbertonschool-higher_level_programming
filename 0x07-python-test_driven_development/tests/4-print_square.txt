@@ -1,0 +1,53 @@
+
+	Importing the function
+	>>> func = __import__('4-print_square').print_square
+
+case 0:
+
+	>>> func(4)
+	####
+	####
+	####
+	####
+
+case 1:
+
+	>>> func(0)
+
+
+case 2:
+
+	>>> func(-2)
+	Traceback (most recent call last):
+	...
+	ValueError: size must be >= 0
+
+case 3:
+
+	>>> func("words")
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+case 4:
+
+	>>> func(None)
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+case 5:
+
+	>>> func(2.5)
+	Traceback (most recent call last):
+	...
+	TypeError: size must be an integer
+
+case 6:
+
+	>>> func()
+	Traceback (most recent call last):
+	...
+	TypeError: print_square() missing 1 required positional argument: 'size'
+
+
