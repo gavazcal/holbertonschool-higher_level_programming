@@ -28,7 +28,7 @@ TypeError: last_name must be a string
 case 4:
 
 >>> say_my_name("")
-My name is 
+My name is  
 
 case 5:
 
