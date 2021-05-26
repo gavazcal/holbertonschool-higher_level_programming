@@ -6,17 +6,6 @@ case 0:
 >>> say_my_name("Satoshi", "Nakamoto")
 My name is Satoshi Nakamoto
 
-case 1:
-
->>> say_my_name("Satoshi")
-My name is Satoshi 
-
-case 2:
-
->>> say_my_name(2)
-Traceback (most recent call last):
-	...
-TypeError: first_name must be a string
 
 case 3:
 
@@ -29,13 +18,6 @@ case 4:
 
 >>> say_my_name("")
 My name is  
-
-case 5:
-
->>> say_my_name(["Satoshi"], 2)
-Traceback (most recent call last):
-	...
-TypeError: first_name must be a string
 
 case 6:
 
