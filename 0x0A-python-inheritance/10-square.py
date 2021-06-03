@@ -9,5 +9,5 @@ class Square(Rectangle):
     def __init__(self, size):
         """size instantiation"""
         BaseGeometry.integer_validator(self, "size", size)
-        super().__init__(self, size)
+        super().__init__(size, size)
         self.__size = size
