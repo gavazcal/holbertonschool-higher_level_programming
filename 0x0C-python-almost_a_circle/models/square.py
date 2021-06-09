@@ -33,7 +33,7 @@ class Square(Rectangle):
         """updates a varying number of args"""
         if not args and not kwargs:
             return
-        if len(args != 0):
+        if len(args) != 0:
             atts = ["id", "size", "x", "y"]
             for idx, attribute in enumerate(args):
                 setattr(self, atts, attribute)
