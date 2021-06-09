@@ -16,14 +16,14 @@ class Square(Rectangle):
         return self.width
 
     @size.setter
-    def size(self, size_val)
-    """size setter method"""
-    if type(size_val) is not int:
-        raise TypeError("width must be an integer")
-    if size_val <= 0:
-        raise ValueError("width must be >= 0")
-    self.height = size_val
-    self.width = size_val
+    def size(self, size_val):
+        """size setter method"""
+        if type(size_val) is not int:
+            raise TypeError("width must be an integer")
+        if size_val <= 0:
+            raise ValueError("width must be >= 0")
+        self.height = size_val
+        self.width = size_val
 
     def __str__(self):
         return "[Square] ({}) {}/{} - {}"\
