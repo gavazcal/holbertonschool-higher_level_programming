@@ -36,7 +36,7 @@ class Square(Rectangle):
         if len(args) != 0:
             atts = ["id", "size", "x", "y"]
             for idx, attribute in enumerate(args):
-                setattr(self, atts, attribute)
+                setattr(self, atts[idx], attribute)
         else:
             for key, value in kwargs.items():
                 if hasattr(self, key):
