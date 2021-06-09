@@ -49,7 +49,7 @@ class Rectangle(Base):
         """height setter method"""
         if type(height_val) is not int:
             raise TypeError("height must be an integer")
-        if height <= 0:
+        if height_val <= 0:
             raise ValueError("height must be > 0")
         self.__height = height_val
 
